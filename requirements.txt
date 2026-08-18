@@ -1,0 +1,15 @@
+# Core pipeline
+requests==2.31.0
+pandas==2.2.2
+
+# Orchestration
+apache-airflow==2.9.3
+
+# Testing
+pytest==9.1.1
+pytest-mock==3.15.1
+responses==0.26.2
+
+# Installed as a transitive dependency of apache-airflow; pinned explicitly
+# because the DAG imports it directly for start_date/duration values.
+pendulum==3.0.0
